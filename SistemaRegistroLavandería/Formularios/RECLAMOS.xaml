@@ -1,0 +1,118 @@
+﻿<Window x:Class="FormularioEntregas.RECLAMOS"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FormularioEntregas"
+        mc:Ignorable="d"
+        Title="RECLAMOS" Height="747.71" Width="907.634" WindowStartupLocation="CenterScreen" WindowStyle="None" Icon="Blanco.jpeg">
+    <Window.Resources>
+        <Style TargetType="Button" x:Key="Button1">
+            <Setter Property="Background" Value="#1c6776"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Margin" Value="0,20,0,0"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="FontFamily" Value="Calibri"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+
+        <Style TargetType="ComboBoxItem" x:Key="ComboboxItem1">
+            <Setter Property="Width" Value="300"/>
+        </Style>
+    </Window.Resources>
+    <StackPanel HorizontalAlignment="Left" Height="719" VerticalAlignment="Top" Width="898" RenderTransformOrigin="0.504,0.114" Margin="0,0,0,-0.6">
+        <Grid  Background="#0e646a" Height="96" VerticalAlignment="Top" Margin="0,0,-0.4,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="262*"/>
+                <ColumnDefinition Width="416*"/>
+                <ColumnDefinition Width="219*"/>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="ImgLogo" HorizontalAlignment="Left" Source="Recursos\LogoH.jpeg" Width="159"  />
+            <Label x:Name="lblTitulo" Content="NUEVO RECLAMO" FontFamily="Calibri" FontSize="48" HorizontalAlignment="Center"
+               VerticalAlignment="Center" FontWeight="Bold" Foreground="White" Grid.Column="1" Height="69" Margin="31.6,7,2.4,7" Width="382"/>
+        </Grid>
+        <Grid x:Name="gridSup" Height="82" Margin="0,0,-0.4,0" RenderTransformOrigin="0.5,0.463" Background="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="114*"/>
+                <ColumnDefinition Width="189*"/>
+                <ColumnDefinition Width="146*"/>
+                <ColumnDefinition Width="131*"/>
+                <ColumnDefinition Width="208*"/>
+                <ColumnDefinition Width="110*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="# Pedido:" HorizontalAlignment="Center" VerticalAlignment="Center" FontStyle="Italic" FontSize="14" Height="29" Margin="28,26,22.4,27" Width="64"/>
+            <TextBox x:Name="txtNumPedido" HorizontalAlignment="Left" Height="23" Margin="114,26,0,0" Cursor="Pen"  TextWrapping="Wrap" VerticalAlignment="Top" Width="171" Grid.ColumnSpan="2" BorderThickness="1,2,1,1" BorderBrush="#FF027646"/>
+            <Button x:Name="btnBuscar" Content="Buscar" VerticalAlignment="Center" 
+            Style="{StaticResource ResourceKey=Button1}" Grid.Column="2" Margin="9.8,28,30.8,31" Height="23" Width="Auto" Click="btnBuscar_Click"/>
+            <Label Content="Fecha:" HorizontalAlignment="Center" VerticalAlignment="Center" FontStyle="Italic" FontSize="14" Height="29" Margin="72.2,22,10,31" Width="49" Grid.Column="3" RenderTransformOrigin="1.113,0.835"/>
+            <DatePicker x:Name="dpFecha" Grid.Column="4" HorizontalAlignment="Left" Margin="26,25,0,0" VerticalAlignment="Top" Background="#FF027646" IsTodayHighlighted="True" TabIndex="2147483641" Width="153" CalendarClosed="dpFecha_CalendarClosed" TextOptions.TextFormattingMode="Display">
+                <DatePicker.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
+                        <GradientStop Color="#FFA3AEB9" Offset="0"/>
+                        <GradientStop Color="#FF8399A9" Offset="0.375"/>
+                        <GradientStop Color="#FF718597" Offset="0.375"/>
+                        <GradientStop Color="#1c6776" Offset="1"/>
+                    </LinearGradientBrush>
+                </DatePicker.BorderBrush>
+            </DatePicker>
+            <TextBox x:Name="txtfecha" Visibility="Hidden" Grid.Column="4" HorizontalAlignment="Left" Height="23" Margin="26,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        </Grid>
+        <Separator />
+        <Grid Height="165" Margin="0,0,-0.4,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="177*"/>
+                <ColumnDefinition Width="262*"/>
+                <ColumnDefinition Width="179*"/>
+                <ColumnDefinition Width="279*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Content="Datos del Cliente" HorizontalAlignment="Center" VerticalAlignment="Center" FontStyle="Italic" FontSize="14" Height="29" Margin="21,5,23.8,7.6" Width="132" FontWeight="Bold"/>
+            <Label Content="ID:" HorizontalAlignment="Center" VerticalAlignment="Center" FontStyle="Italic" FontSize="14" Height="29" Margin="21,4.4,23.8,8.2" Width="132" FontWeight="Bold" Grid.Row="1" BorderBrush="#FF080404" Background="#FFC3F3DF" HorizontalContentAlignment="Center"/>
+            <Label Content="Nombres:" HorizontalAlignment="Center" VerticalAlignment="Center" FontStyle="Italic" FontSize="14" Height="29" Margin="21,7.8,23.8,4.8" Width="132" FontWeight="Bold" Grid.Row="2" BorderBrush="#FF080404" Background="#FFC3F3DF" HorizontalContentAlignment="Center"/>
+            <Label Content="Teléfono:" HorizontalAlignment="Center" VerticalAlignment="Center" FontStyle="Italic" FontSize="14" Height="29" Margin="14.8,8.4,32.4,4.2" Width="132" FontWeight="Bold" Grid.Row="1" BorderBrush="#FF080404" Background="#FFC3F3DF" Grid.Column="2" HorizontalContentAlignment="Center"/>
+            <Label Content="E-mail:" HorizontalAlignment="Center" VerticalAlignment="Center" FontStyle="Italic" FontSize="14" Height="29" Margin="14.8,7.8,32.4,4.8" Width="132" FontWeight="Bold" Grid.Row="2" BorderBrush="#FF080404" Background="#FFC3F3DF" Grid.Column="2" HorizontalContentAlignment="Center"/>
+            <Label Content="Fecha de Pedido:" HorizontalAlignment="Center" VerticalAlignment="Center" FontStyle="Italic" FontSize="14" Height="29" Margin="14.8,8.2,32.4,4.4" Width="132" FontWeight="Bold" Grid.Row="3" BorderBrush="#FF080404" Background="#FFC3F3DF" Grid.Column="2" HorizontalContentAlignment="Center"/>
+
+            <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="26" Margin="9.2,9.4,0,0" IsEnabled="False"  TextWrapping="Wrap" VerticalAlignment="Top" Width="234" BorderThickness="1,2,1,1" BorderBrush="#FF027646" Grid.Column="1" Grid.Row="1"/>
+            <TextBox x:Name="txtNameCliente" HorizontalAlignment="Left" Height="26" IsEnabled="False" Margin="9.2,9.8,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="234" BorderThickness="1,2,1,1" BorderBrush="#FF027646" Grid.Column="1" Grid.Row="2"/>
+            <TextBox x:Name="txtTelefono" HorizontalAlignment="Left" Height="26" Margin="178.8,10.4,0,0" Cursor="Pen"  TextWrapping="Wrap" VerticalAlignment="Top" Width="234" BorderThickness="1,2,1,1" BorderBrush="#FF027646" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="2"/>
+            <TextBox x:Name="txtMail" HorizontalAlignment="Left" Height="26" Margin="178.8,9.8,0,0" Cursor="Pen"  TextWrapping="Wrap" VerticalAlignment="Top" Width="234" BorderThickness="1,2,1,1" BorderBrush="#FF027646" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2"/>
+            <TextBox x:Name="txtFechaPedido" HorizontalAlignment="Left" Height="26" Margin="178.8,9.2,0,0" IsEnabled="False"   TextWrapping="Wrap" VerticalAlignment="Top" Width="234" BorderThickness="1,2,1,1" BorderBrush="#FF027646" Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="2"/>
+
+        </Grid>
+        <Separator />
+        <Grid>
+            <DataGrid x:Name="dgvPrendas" CanUserAddRows="False" Height="271" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="25,16,156,-16" BorderBrush="#FF03745A" Background="#FFFCFFFE" Foreground="#FF024E34" FontWeight="Bold">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Path=idDetalle}" Header="" CanUserResize="False" Width="0" MinWidth="0"/>
+                    <DataGridTextColumn Binding="{Binding Path=nombreServicio}"  Header="Servicio" Width="125"  CanUserResize="False" />
+                    <DataGridTextColumn Binding="{Binding Path=nombrePrenda}" Header="Prenda" Width="125" CanUserResize="False"/>
+                    <DataGridTextColumn Binding="{Binding Path=descripcion}" Header="Descripción"  Width="447" CanUserResize="False" FontWeight="Bold"/>
+                </DataGrid.Columns>
+
+            </DataGrid>
+            <Button x:Name="btnGenerarReclamo" Content="Generar Reclamo" VerticalAlignment="Center"
+            Style="{StaticResource ResourceKey=Button1}" Margin="747,47,24.6,201.2" Height="23" Width="Auto" Click="btnGenerarReclamo_Click"/>
+        </Grid>
+
+        <Grid Height="100">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="173*"/>
+                <ColumnDefinition Width="97*"/>
+                <ColumnDefinition Width="179*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btnGuardar" Content="Salir" VerticalAlignment="Center" HorizontalAlignment="Center"
+            Style="{StaticResource ResourceKey=Button1}" Grid.Column="1" Height="23" Click="btnGuardar_Click" />
+
+        </Grid>
+
+
+
+    </StackPanel>
+</Window>

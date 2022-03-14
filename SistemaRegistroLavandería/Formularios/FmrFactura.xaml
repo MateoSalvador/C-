@@ -1,0 +1,102 @@
+﻿<Window x:Class="FormularioEntregas.FmrFactura"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FormularioEntregas"
+        mc:Ignorable="d"
+        Title="FmrFactura" Height="825" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" Icon="Blanco.jpeg" >
+    <Window.Resources>
+        <Style TargetType="Button" x:Key="Button1">
+            <Setter Property="Background" Value="#0e646a"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Margin" Value="0,20,0,0"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="FontFamily" Value="Calibri"/>
+        </Style>
+    </Window.Resources>
+    <StackPanel>
+        <Grid  Background="#0e646a" Height="100" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="240"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="ImgLogo" HorizontalAlignment="Left" Source="Recursos\LogoH.jpeg" Width="159" Margin="33,0,0,0"  />
+            <Label x:Name="lblTitulo" Content="HIGIENSEC" FontFamily="Calibri" FontSize="48" HorizontalAlignment="Center"
+               VerticalAlignment="Center" FontWeight="Bold" Foreground="White" Grid.ColumnSpan="2" Height="68" Margin="48,10,93,22" Width="227" Grid.Column="1"/>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.4*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.3*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height ="60"/>
+                <RowDefinition Height ="60"/>
+                <RowDefinition Height ="65"/>
+                <RowDefinition Height ="60"/>
+                <RowDefinition Height ="60"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Column="0" HorizontalAlignment="Left" Height="23" Margin="10,20,0,26" Grid.Row="0" TextWrapping="Wrap" Text="Factura N° : " VerticalAlignment="Center" Width="107" FontWeight="Bold" FontSize="16"/>
+            <TextBlock Grid.Column="0" HorizontalAlignment="Left" Height="23" Margin="10,20,0,26" Grid.Row="1" TextWrapping="Wrap" Text="Cédula/Ruc : " VerticalAlignment="Center" Width="107" FontWeight="Bold" FontSize="16"/>
+            <TextBlock Grid.Column="0" HorizontalAlignment="Left" Height="23" Margin="10,20,0,26" Grid.Row="2" TextWrapping="Wrap" Text="Nombre : " VerticalAlignment="Center" Width="107" FontWeight="Bold" FontSize="16"/>
+            <TextBlock Grid.Column="0" HorizontalAlignment="Left" Height="23" Margin="10,20,0,26" Grid.Row="4" TextWrapping="Wrap" Text="Dirección : " VerticalAlignment="Center" Width="107" FontWeight="Bold" FontSize="16"/>
+            <TextBlock Grid.Column="2" HorizontalAlignment="Left" Height="24" Margin="10,15,0,21" Grid.Row="0" TextWrapping="Wrap" Text="Fecha : " VerticalAlignment="Center" Width="68" FontWeight="Bold" FontSize="16"/>
+            <TextBlock Grid.Column="0" HorizontalAlignment="Left" Height="23" Margin="10,20,0,26" Grid.Row="3" TextWrapping="Wrap" Text="Teléfono : " VerticalAlignment="Center" Width="107" FontWeight="Bold" FontSize="16"/>
+            <TextBlock Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="10,20,0,26" Grid.Row="2" TextWrapping="Wrap" Text="Apellido : " VerticalAlignment="Center" Width="107" FontWeight="Bold" FontSize="16"/>
+            <TextBlock Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="10,20,0,26" Grid.Row="3" TextWrapping="Wrap" Text="E-mail : " VerticalAlignment="Center" Width="107" FontWeight="Bold" FontSize="16"/>
+            <TextBlock x:Name="txbFacturaN" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,20,0,26" Grid.Row="0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"  FontSize="16"/>
+            <TextBlock x:Name="txbCedula" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,20,0,26" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"  FontSize="16"/>
+            <TextBlock x:Name="txbNombre" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,20,0,26" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"  FontSize="16"/>
+            <TextBlock x:Name="txbDireccion" Grid.Column="1" HorizontalAlignment="Left" Height="26" Margin="5,0,0,19" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Width="655"  FontSize="16" Grid.ColumnSpan="3"/>
+            <TextBlock x:Name="txbFecha" Grid.Column="3" HorizontalAlignment="Left" Height="26" Margin="10,16,0,18" Grid.Row="0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"  FontSize="16"/>
+            <TextBlock x:Name="txbTelf" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,20,0,26" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"  FontSize="16"/>
+            <TextBlock x:Name="txbApell" Grid.Column="3" HorizontalAlignment="Left" Height="23" Margin="10,20,0,26" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200"  FontSize="16"/>
+            <TextBlock x:Name="txbemail" Grid.Column="3" HorizontalAlignment="Left" Height="35" Margin="10,15,0,10" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="246"  FontSize="16"/>
+        </Grid>
+        <Grid Height="200">
+            <DataGrid HorizontalAlignment="Left" Height="190" VerticalAlignment="Top" Width="668" x:Name="DetalleFactura" Margin="49,10,0,0" ItemsSource="{Binding}" AutoGenerateColumns="False" CanUserAddRows="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn x:Name="dcg2Servicio" Header="Servicio" Binding="{Binding Path=Servicio}" Width="0.75*" IsReadOnly="True"/>
+                    <DataGridTextColumn x:Name="dcg2Prenda" Header="Prenda" Binding="{Binding Path=Prenda}" Width="0.8*" IsReadOnly="True"/>
+                    <DataGridTextColumn x:Name="dcg2Observacion" Header="Observación" Binding="{Binding Path=Observación}" Width="2*" IsReadOnly="True"/>
+                    <DataGridTextColumn x:Name="dcg2Precio" Header="Precio" Binding="{Binding Path=Precio}" Width="0.5*" IsReadOnly="True"/>
+
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Column="2" HorizontalAlignment="Right" Height="23"  Grid.Row="0" TextWrapping="Wrap" Text="Subtotal:    $" VerticalAlignment="Center" Width="107" FontWeight="Bold" FontSize="16"/>
+            <TextBlock Grid.Column="2" HorizontalAlignment="Right" Height="23"  Grid.Row="1" TextWrapping="Wrap" Text="Descuento: $" VerticalAlignment="Center" Width="107" FontWeight="Bold" FontSize="15.5"/>
+            <TextBlock Grid.Column="0" HorizontalAlignment="Right" Height="22"  Grid.Row="1" TextWrapping="Wrap" Text="Fecha de Entrega: " VerticalAlignment="Center" Width="148" FontWeight="Bold" FontSize="16" Margin="0,4"/>
+            <TextBlock Grid.Column="2" HorizontalAlignment="Right" Height="23"  Grid.Row="2" TextWrapping="Wrap" Text="IVA 12%:    $" VerticalAlignment="Center" Width="107" FontWeight="Bold" FontSize="16"/>
+            <TextBlock Grid.Column="2" HorizontalAlignment="Right" Height="23"  Grid.Row="3" TextWrapping="Wrap" Text="Total:          $" VerticalAlignment="Center" Width="107" FontWeight="Bold" FontSize="16"/>
+            <TextBlock x:Name="txbsubt" Grid.Column="3" HorizontalAlignment="Left" Height="23"  Grid.Row="0" TextWrapping="Wrap" Text=" " VerticalAlignment="Center" Width="107" FontWeight="Bold" FontSize="16"/>
+            <TextBlock x:Name="txbdesc" Grid.Column="3" HorizontalAlignment="Left" Height="23"  Grid.Row="1" TextWrapping="Wrap" Text=" " VerticalAlignment="Center" Width="107" FontWeight="Bold" FontSize="16"/>
+            <TextBlock x:Name="txbiva" Grid.Column="3" HorizontalAlignment="Left" Height="23"  Grid.Row="2" TextWrapping="Wrap" Text=" " VerticalAlignment="Center" Width="107" FontWeight="Bold" FontSize="16"/>
+            <TextBlock x:Name="txbTotal" Grid.Column="3" HorizontalAlignment="Left" Height="22"  Grid.Row="3" TextWrapping="Wrap" Text=" " VerticalAlignment="Center" Width="170" FontWeight="Bold" FontSize="16" Margin="0,4"/>
+            <TextBlock x:Name="txbFechaentrega" Grid.Column="1" HorizontalAlignment="Left" Height="22"  Grid.Row="1" TextWrapping="Wrap" Text=" " VerticalAlignment="Center" Width="140" FontWeight="Bold" FontSize="16" Margin="0,4"/>
+        </Grid>
+        <Grid Height="100">
+            <Button x:Name="btnCancelar" Content="Regresar" Style="{StaticResource Button1}" Height="19" Margin="276,0,316,51" VerticalAlignment="Bottom" Click="btnCancelar_Click"/>
+            <Button x:Name="btnGuardar" Content="Guardar" Style="{StaticResource Button1}" Height="19" Margin="516,0,76,51"  VerticalAlignment="Bottom" Click="btnGuardar_Click"/>
+        </Grid>
+    </StackPanel>
+</Window>

@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E0D479A-F146-496A-9D05-22C0B1611EDE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FormularioEntregas</RootNamespace>
+    <AssemblyName>FormularioEntregas</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fmrPedidoDetalle.xaml.cs">
+      <DependentUpon>fmrPedidoDetalle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RECLAMOS.xaml.cs">
+      <DependentUpon>RECLAMOS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vtnGenerarReclamo.xaml.cs">
+      <DependentUpon>vtnGenerarReclamo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dbLavanderiaHigiensecDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbLavanderiaHigiensecDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbLavanderiaHigiensecDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbLavanderiaHigiensecDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FmrFactura.xaml.cs">
+      <DependentUpon>FmrFactura.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminValores.xaml.cs">
+      <DependentUpon>FrmAdminValores.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultarReclamo.xaml.cs">
+      <DependentUpon>frmConsultarReclamo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCotizacion.xaml.cs">
+      <DependentUpon>FrmCotizacion.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmEntregas.xaml.cs">
+      <DependentUpon>FrmEntregas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEstadosPedido.xaml.cs">
+      <DependentUpon>FrmEstadosPedido.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.xaml.cs">
+      <DependentUpon>FrmLogin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frmReclamosPendientes.xaml.cs">
+      <DependentUpon>frmReclamosPendientes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistroPedido.xaml.cs">
+      <DependentUpon>FrmRegistroPedido.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.xaml.cs">
+      <DependentUpon>Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="dbLavanderiaHigiensecDataSet.xsc">
+      <DependentUpon>dbLavanderiaHigiensecDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbLavanderiaHigiensecDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbLavanderiaHigiensecDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbLavanderiaHigiensecDataSet.xss">
+      <DependentUpon>dbLavanderiaHigiensecDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbLavanderiaHigiensecDataSet1.xsc">
+      <DependentUpon>dbLavanderiaHigiensecDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dbLavanderiaHigiensecDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbLavanderiaHigiensecDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbLavanderiaHigiensecDataSet1.xss">
+      <DependentUpon>dbLavanderiaHigiensecDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Directorio-Datos\Directorio-Datos.csproj">
+      <Project>{d55df804-d043-433a-aabc-dc4c42afb50f}</Project>
+      <Name>Directorio-Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Directorio-Entidades\Directorio-Entidades.csproj">
+      <Project>{5d854162-ee1d-426e-a99d-2b8bcdef9a41}</Project>
+      <Name>Directorio-Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Directorio-Logica\Directorio-Logica.csproj">
+      <Project>{55d4d284-1233-4f84-b292-f68391296db9}</Project>
+      <Name>Directorio-Logica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ReferencePath Include="C:\Users\Mateo\OneDrive\Documentos\Mateo Salvador\5to Semestre\Programación Basada en Eventos\Nueva carpeta\FormularioE\FormularioE\Directorio-Datos\bin\Debug\Directorio-Datos.dll" />
+    <ReferencePath Include="C:\Users\Mateo\OneDrive\Documentos\Mateo Salvador\5to Semestre\Programación Basada en Eventos\Nueva carpeta\FormularioE\FormularioE\Directorio-Entidades\bin\Debug\netstandard2.0\Directorio-Entidades.dll" />
+    <ReferencePath Include="C:\Users\Mateo\OneDrive\Documentos\Mateo Salvador\5to Semestre\Programación Basada en Eventos\Nueva carpeta\FormularioE\FormularioE\Directorio-Logica\bin\Debug\netstandard2.0\Directorio-Logica.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Microsoft.CSharp.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\PresentationCore.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\PresentationFramework.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xaml.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\WindowsBase.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\netstandard.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="C:\Users\Mateo\OneDrive\Documentos\Mateo Salvador\5to Semestre\Programación Basada en Eventos\Nueva carpeta\FormularioE\FormularioE\FormularioEntregas\obj\Debug\FmrFactura.g.cs" />
+    <Compile Include="C:\Users\Mateo\OneDrive\Documentos\Mateo Salvador\5to Semestre\Programación Basada en Eventos\Nueva carpeta\FormularioE\FormularioE\FormularioEntregas\obj\Debug\fmrPedidoDetalle.g.cs" />
+    <Compile Include="C:\Users\Mateo\OneDrive\Documentos\Mateo Salvador\5to Semestre\Programación Basada en Eventos\Nueva carpeta\FormularioE\FormularioE\FormularioEntregas\obj\Debug\FrmAdminValores.g.cs" />
+    <Compile Include="C:\Users\Mateo\OneDrive\Documentos\Mateo Salvador\5to Semestre\Programación Basada en Eventos\Nueva carpeta\FormularioE\FormularioE\FormularioEntregas\obj\Debug\frmConsultarReclamo.g.cs" />
+    <Compile Include="C:\Users\Mateo\OneDrive\Documentos\Mateo Salvador\5to Semestre\Programación Basada en Eventos\Nueva carpeta\FormularioE\FormularioE\FormularioEntregas\obj\Debug\FrmCotizacion.g.cs" />
+    <Compile Include="C:\Users\Mateo\OneDrive\Documentos\Mateo Salvador\5to Semestre\Programación Basada en Eventos\Nueva carpeta\FormularioE\FormularioE\FormularioEntregas\obj\Debug\FrmEntregas.g.cs" />
+    <Compile Include="C:\Users\Mateo\OneDrive\Documentos\Mateo Salvador\5to Semestre\Programación Basada en Eventos\Nueva carpeta\FormularioE\FormularioE\FormularioEntregas\obj\Debug\FrmEstadosPedido.g.cs" />
+    <Compile Include="C:\Users\Mateo\OneDrive\Documentos\Mateo Salvador\5to Semestre\Programación Basada en Eventos\Nueva carpeta\FormularioE\FormularioE\FormularioEntregas\obj\Debug\FrmLogin.g.cs" />
+    <Compile Include="C:\Users\Mateo\OneDrive\Documentos\Mateo Salvador\5to Semestre\Programación Basada en Eventos\Nueva carpeta\FormularioE\FormularioE\FormularioEntregas\obj\Debug\frmReclamosPendientes.g.cs" />
+    <Compile Include="C:\Users\Mateo\OneDrive\Documentos\Mateo Salvador\5to Semestre\Programación Basada en Eventos\Nueva carpeta\FormularioE\FormularioE\FormularioEntregas\obj\Debug\FrmRegistroPedido.g.cs" />
+    <Compile Include="C:\Users\Mateo\OneDrive\Documentos\Mateo Salvador\5to Semestre\Programación Basada en Eventos\Nueva carpeta\FormularioE\FormularioE\FormularioEntregas\obj\Debug\Menu.g.cs" />
+    <Compile Include="C:\Users\Mateo\OneDrive\Documentos\Mateo Salvador\5to Semestre\Programación Basada en Eventos\Nueva carpeta\FormularioE\FormularioE\FormularioEntregas\obj\Debug\RECLAMOS.g.cs" />
+    <Compile Include="C:\Users\Mateo\OneDrive\Documentos\Mateo Salvador\5to Semestre\Programación Basada en Eventos\Nueva carpeta\FormularioE\FormularioE\FormularioEntregas\obj\Debug\vtnGenerarReclamo.g.cs" />
+    <Compile Include="C:\Users\Mateo\OneDrive\Documentos\Mateo Salvador\5to Semestre\Programación Basada en Eventos\Nueva carpeta\FormularioE\FormularioE\FormularioEntregas\obj\Debug\App.g.cs" />
+  </ItemGroup>
+</Project>
