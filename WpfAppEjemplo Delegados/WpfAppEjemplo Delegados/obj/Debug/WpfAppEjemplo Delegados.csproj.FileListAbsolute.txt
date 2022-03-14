@@ -1,0 +1,15 @@
+C:\Users\Mateo\source\repos\WpfAppEjemplo Delegados\WpfAppEjemplo Delegados\bin\Debug\WpfAppEjemplo Delegados.exe.config
+C:\Users\Mateo\source\repos\WpfAppEjemplo Delegados\WpfAppEjemplo Delegados\bin\Debug\WpfAppEjemplo Delegados.exe
+C:\Users\Mateo\source\repos\WpfAppEjemplo Delegados\WpfAppEjemplo Delegados\bin\Debug\WpfAppEjemplo Delegados.pdb
+C:\Users\Mateo\source\repos\WpfAppEjemplo Delegados\WpfAppEjemplo Delegados\obj\Debug\MainWindow.g.cs
+C:\Users\Mateo\source\repos\WpfAppEjemplo Delegados\WpfAppEjemplo Delegados\obj\Debug\App.g.cs
+C:\Users\Mateo\source\repos\WpfAppEjemplo Delegados\WpfAppEjemplo Delegados\obj\Debug\WpfAppEjemplo Delegados_MarkupCompile.cache
+C:\Users\Mateo\source\repos\WpfAppEjemplo Delegados\WpfAppEjemplo Delegados\obj\Debug\WpfAppEjemplo Delegados_MarkupCompile.lref
+C:\Users\Mateo\source\repos\WpfAppEjemplo Delegados\WpfAppEjemplo Delegados\obj\Debug\MainWindow.baml
+C:\Users\Mateo\source\repos\WpfAppEjemplo Delegados\WpfAppEjemplo Delegados\obj\Debug\WpfAppEjemplo Delegados.g.resources
+C:\Users\Mateo\source\repos\WpfAppEjemplo Delegados\WpfAppEjemplo Delegados\obj\Debug\WpfAppEjemplo_Delegados.Properties.Resources.resources
+C:\Users\Mateo\source\repos\WpfAppEjemplo Delegados\WpfAppEjemplo Delegados\obj\Debug\WpfAppEjemplo Delegados.csproj.GenerateResource.cache
+C:\Users\Mateo\source\repos\WpfAppEjemplo Delegados\WpfAppEjemplo Delegados\obj\Debug\WpfAppEjemplo Delegados.csproj.CoreCompileInputs.cache
+C:\Users\Mateo\source\repos\WpfAppEjemplo Delegados\WpfAppEjemplo Delegados\obj\Debug\WpfAppEjemplo Delegados.exe
+C:\Users\Mateo\source\repos\WpfAppEjemplo Delegados\WpfAppEjemplo Delegados\obj\Debug\WpfAppEjemplo Delegados.pdb
+C:\Users\Mateo\source\repos\WpfAppEjemplo Delegados\WpfAppEjemplo Delegados\obj\Debug\WpfAppEjemplo Delegados.csprojAssemblyReference.cache

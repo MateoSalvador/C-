@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfAppEjemplo_Delegados.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppEjemplo_Delegados"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Button x:Name="btnSaludar" Content="Saludar" HorizontalAlignment="Left" Margin="284,193,0,0" VerticalAlignment="Top" Width="143" Click="btnSaludar_Click" Height="32"/>
+        <Button x:Name="btnDelegados" Content="Probar Delegados" HorizontalAlignment="Left" Margin="284,246,0,0" VerticalAlignment="Top" Width="143" Click="btnDelegados_Click" Height="33"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="18" Margin="284,147,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="143" KeyDown="txtNombre_KeyDown"/>
+        <Label Content="Ingrese su Nombre:" HorizontalAlignment="Left" Margin="284,101,0,0" VerticalAlignment="Top" Width="178"/>
+    </Grid>
+</Window>
