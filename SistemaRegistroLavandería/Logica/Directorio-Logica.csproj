@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Directorio_Logica</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Directorio-Datos\Directorio-Datos.csproj" />
+    <ProjectReference Include="..\Directorio-Entidades\Directorio-Entidades.csproj" />
+  </ItemGroup>
+
+</Project>
