@@ -1,0 +1,13 @@
+https://drive.google.com/drive/folders/1txaeTenqjEqQsOvjMyVQBEWC2ry1dzgC?usp=sharing
+
+Grupo 4 T4
+
+Para el Login
+
+Usuarios    Contraseñas
+
+admin          LAVANDERIA
+
+cajero           cajero
+
+servicios      servicios
